@@ -59,7 +59,7 @@ insert into curso(codigo_curso,nome) values(1,"Informática");
 insert into curso(codigo_curso,nome) values(2,"Mecatrônica");
 insert into curso(codigo_curso,nome) values(3,"Design");
 
-insert into aluno(matricula,nome,endereco,telefone,codigo_cidade,codigo_curso) values(123456,"Fernando Gonçalves","Rua Pedro Loos",2231458739,1,1);
+insert into aluno(matricula,nome,endereco,telefone,codigo_cidade,codigo_curso) values(1,"Fernando Gonçalves","Rua Pedro Loos",2231458739,1,1);
 
 insert into professor(codigo_professor,nome,codigo_cidade,codigo_curso) values(1,"Rodrigo",1,1);
 
