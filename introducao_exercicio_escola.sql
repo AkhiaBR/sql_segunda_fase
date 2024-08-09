@@ -4,22 +4,19 @@
 create table estado (
     codigo_estado int(6) not null,
     nome varchar(40) not null,
-    primary key (codigo_estado)
-);
+    primary key (codigo_estado));
 
 create table curso (
     codigo_curso int(6) not null,
     nome varchar(40) not null,
-    primary key (codigo_curso)
-);
+    primary key (codigo_curso));
 
 create table cidade (
     codigo_cidade int(6) not null,
     nome varchar(40) not null,
     codigo_estado int(6) not null,
     primary key (codigo_cidade),
-    foreign key (codigo_estado) references estado(codigo_estado)
-);
+    foreign key (codigo_estado) references estado(codigo_estado));
 
 create table professor (
     codigo_professor int(6) not null,
@@ -28,8 +25,7 @@ create table professor (
     codigo_curso int(6) not null,
     primary key (codigo_professor),
     foreign key (codigo_cidade) references cidade(codigo_cidade),
-    foreign key (codigo_curso) references curso(codigo_curso)
-);
+    foreign key (codigo_curso) references curso(codigo_curso));
 
 create table aluno (
     matricula int(6) not null,
@@ -40,8 +36,7 @@ create table aluno (
     codigo_curso int(6) not null,
     primary key (matricula),
     foreign key (codigo_cidade) references cidade(codigo_cidade),
-    foreign key (codigo_curso) references curso(codigo_curso)
-);
+    foreign key (codigo_curso) references curso(codigo_curso));
 
 create table disciplina (
     codigo_disciplina int(6) not null,
@@ -50,8 +45,7 @@ create table disciplina (
     codigo_professor int(6) not null,
     primary key (codigo_disciplina),
     foreign key (codigo_curso) references curso(codigo_curso),
-    foreign key (codigo_professor) references professor(codigo_professor)
-);
+    foreign key (codigo_professor) references professor(codigo_professor));
 
 insert into estado(codigo_estado,nome) values(1,"Santa Catarina"); -- Coloca dados dentro da table estado, sendo o values os dados a serem colocados
 insert into estado(codigo_estado,nome) values(2,"Paraná");
