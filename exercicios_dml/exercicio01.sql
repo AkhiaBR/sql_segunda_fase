@@ -1,0 +1,1 @@
+SELECT * FROM 2190escola.matricula;
