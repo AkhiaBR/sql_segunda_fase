@@ -1,0 +1,2 @@
+INSERT INTO matricula (codigo,data_matricula,hora,codigo_aluno,codigo_curso,desconto,valor) -- quais campos vao receber valores
+VALUES (1,"2024/09/02","10:00:00",1,2,0,500.00) -- atribui valores aos campos

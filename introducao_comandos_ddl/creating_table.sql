@@ -9,4 +9,4 @@ valor FLOAT(8,2) NOT NULL,
 Primary key (codigo),
 Foreign key (codigo_aluno) REFERENCES aluno(matricula),
 Foreign key (codigo_curso) REFERENCES curso(codigo_curso)
-);
+); 
